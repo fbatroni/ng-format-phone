@@ -1,0 +1,6 @@
+.yo-rc.json
+node_modules/
+app/bower_components/
+.DS_Store
+dist/
+

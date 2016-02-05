@@ -1,0 +1,46 @@
+{
+  "name": "angular-phone-format",
+  "version": "0.0.1",
+  "title": "Angular Phone Format",
+  "appPath": "app",
+  "description": "Convert text to international friendly phone number format",
+  "keywords": [
+    "phone",
+    "phone numbers",
+    "format",
+    "international",
+    "e-164"
+  ],
+  "homepage": "https://github.com/fbatroni/ng-phone-format",
+  "author": {
+    "name": "Fritz G. Batroni"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fbatroni/ng-phone-format.git"
+  },
+  "bugs": "https://github.com/fbatroni/ng-phone-format/issues",
+  "dependencies": {
+    "jquery": ">=2.1.1",
+    "angular": "^1.4.9",
+    "angular-cookie": "^4.0.10",
+    "bootstrap": "^3.3.6",
+    "angular-sanitize": "^1.4.9"
+  },
+  "main": [
+    "dist/js/angular-phone-format"
+  ],
+  "ignore": [
+    "/*.*",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "Fritz G. Batroni <fritz.g.batroni@gmail.com>"
+  ],
+  "license": "MIT"
+}
