@@ -21,11 +21,7 @@
   },
   "bugs": "https://github.com/fbatroni/ng-phone-format/issues",
   "dependencies": {
-    "jquery": ">=2.1.1",
-    "angular": "^1.4.9",
-    "angular-cookie": "^4.0.10",
-    "bootstrap": "^3.3.6",
-    "angular-sanitize": "^1.4.9"
+    "angular": "~1.2.0"
   },
   "main": [
     "dist/js/angular-phone-format"
@@ -42,5 +38,8 @@
   "authors": [
     "Fritz G. Batroni <fritz.g.batroni@gmail.com>"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
 }

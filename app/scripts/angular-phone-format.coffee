@@ -12,10 +12,10 @@ do ->
       link: (scope, element, attrs, PhoneNumberController) ->
         phone = attrs.phoneNumber
         ext = attrs.ext
-        PhoneNumberController.activate phone
+        PhoneNumberController.format phone
         attrs.$observe 'phoneNumber', (value) ->
           phone = value
-          PhoneNumberController.activate phone
+          PhoneNumberController.format phone
           return
         return
       template: '<span style="white-space:nowrap;">{{ vm.display }}</span>'

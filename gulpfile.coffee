@@ -39,6 +39,16 @@ browserifyTask = (t) ->
 
 browserifyTask "angular-phone-format", true
 
+gulp.task 'index', ->
+  target = gulp.src('./app/templates/index.html')
+  sources = gulp.src([
+    './app/scripts/**/*.js'
+    './app/styles/**/*.css'
+  ], read: false, relative: true)
+  target.pipe($.inject(sources))
+  .pipe gulp.dest('./test')
+
+
 gulp.task 'default', ['clean', 'coffeelint', 'angular-phone-format.coffee'], ->
   gulp.src(['app/scripts/**/*.coffee', '!app/scripts/**/angular-phone-format.coffee'])
   .pipe $.coffee()
